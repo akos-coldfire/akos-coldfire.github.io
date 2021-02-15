@@ -1,0 +1,352 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+@import url(./reset.css);
+@import url(./fonts.css);
+
+.left{
+    background-color: rgb(35, 46, 58);
+    height: 1950px;
+    width: 370px;
+    padding: 60px 60px;
+}
+
+.text-head, .text-heads-2, .text-heads-3, .text-head-right{
+    text-transform: uppercase;
+    color: white;
+    font-size: 35px;
+    font-family: 'Frankois_One', sans-serif;
+    margin: 80px 40px 0;
+}
+
+.text-heads-2{
+    margin: 50px 65px 0;
+}
+
+.text-heads-3{
+    margin: 50px 20px 0;
+}
+
+.text-head-right{
+    margin: 0 0 0 35px;
+    color: black;
+}
+
+.positionss{
+    float: left;
+}
+
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1119px;
+}
+
+.right{
+    width: 749px;
+    background-color: white;
+    height: 1950px;
+}
+
+.image{
+    position: relative;
+	width: 100%;
+}
+
+h1{
+    position: absolute;
+	top: 120px;
+	left: 100px;
+	width: 100%;
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'CreateRound', sans-serif;
+}
+
+.heads{
+    position: absolute;
+	top: 190px;
+	left: 100px;
+	width: 100%;
+    color: rgb(179, 243, 222);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'CreateRound', sans-serif;
+}
+
+.fa-phone-alt, .fa-envelope-square, .fa-map-marker-alt{
+    margin: 25px 20px 0 0;
+    font-size: 25px;
+    color: rgb(179, 243, 222);
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.fa-envelope-square, .fa-map-marker-alt{
+    font-size: 30px;
+}
+
+.fa-phone-alt:hover, .fa-envelope-square:hover, .fa-map-marker-alt:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.link{
+    font-size: 18px;
+    color: white;
+    font-family: 'Frankois_One', sans-serif; 
+    text-decoration: none;
+}
+
+.bottom{
+    width: 1119px;
+    height: 70px;
+    background-color: black;
+}
+
+.icons{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.fa-facebook, .fa-instagram, .fa-youtube{
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-youtube:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.icons li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+hr{
+    margin: 50px auto 0;
+    /* приховання стандартної лінії */
+    border: 0; 
+    border-bottom: 3px solid grey;
+    width: 90px;
+}
+
+.skill-text{
+    margin: 25px 10px 0 0;
+    color: rgb(179, 243, 222);
+    font-family: 'Frankois_One', sans-serif;
+    font-size: 19px;
+}
+
+.block-skill, .block-skill-1, .block-skill-1-2, .block-skill-1-3, .block-skill-1-4, .block-skill-1-5, .block-skill-1-6,
+.block-languages-1, .block-languages-1-1, .block-languages-1-2, .block-languages-1-3, .block-skill-1-7{
+    margin: 27px 10px 0 0;
+    width: 166px;
+    height: 15px;
+    background-color: white;
+}
+
+.block-skill-2, .block-skill-2-1, .block-skill-2-2, .block-skill-2-3, .block-skill-2-4, .block-skill-2-5, .block-skill-2-6,
+.block-languages-2, .block-languages-2-1, .block-languages-2-2, .block-languages-2-3, .block-skill-2-7{
+    width: 149px;
+    height: 15px;
+    background-color: rgb(13, 146, 146);
+}
+
+.block-skill-1{
+    margin: 27px 10px 0 12px;
+}
+
+.block-skill-2-1{
+    width: 119px;
+}
+
+.block-skill-1-2{
+    margin: 27px 10px 0 0;
+}
+
+.block-skill-2-2{
+    width: 158px;
+}
+
+.block-skill-1-3{
+    margin: 27px 10px 0 41px;
+}
+
+.block-skill-2-3{
+    width: 49px;
+}
+
+.block-skill-1-4{
+    margin: 27px 10px 0 22px;
+}
+
+.block-skill-2-4{
+    width: 89px;
+}
+
+.block-skill-1-5{
+    margin: 27px 10px 0 7px;
+}
+
+.block-skill-2-5{
+    width: 109px;
+}
+
+.block-skill-1-6{
+    margin: 27px 10px 0 22px;
+}
+
+.block-skill-1-7{
+    margin: 27px 10px 50px 22px;
+}
+
+.block-skill-2-6{
+    width: 80px;
+}
+
+.block-skill-2-7{
+    width: 98px;
+}
+
+.block-languages-1{
+    margin: 27px 0 0 2px;
+    width: 155px;
+}
+
+.block-languages-2{
+    width: 150px;
+}
+
+.block-languages-1-1{
+    margin: 27px 0 0 12px;
+    width: 155px;
+}
+
+.block-languages-2-1{
+    width: 130px;
+}
+
+.block-languages-1-2{
+    margin: 27px 0 0 18px;
+    width: 155px;
+}
+
+.block-languages-2-2{
+    width: 95px;
+}
+
+.block-languages-1-3{
+    margin: 27px 0 50px 10px;
+    width: 155px;
+}
+
+.block-languages-2-3{
+    width: 75px;
+}
+
+.fa-user, .fa-desktop, .fa-graduation-cap{
+    color: rgb(13, 146, 146);
+}
+
+.block-user, .block-user-1, .block-user-2{
+    margin: 17px 10px 20px 20px;
+    width: 493px;
+    height: 3px;
+    background-color: rgb(13, 146, 146);
+}
+
+.description{
+    margin: 50px 0 10px 35px ;
+    font-size: 18px;
+    font-family: 'Frankois_One', sans-serif;
+    line-height: 1.5;
+}
+
+.full-desription{
+    margin: 20px 15px 50px 0;
+    line-height: 1.25;
+}
+
+.block-user-1{
+    width: 290px;
+}
+
+.block-user-2{
+    width: 410px;
+}
+
+.text-companies{
+    margin: 35px 0 10px 60px ;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'CreateRound', sans-serif;
+    color: rgb(13, 146, 146);
+}
+
+.sizing{
+    margin: 120px 0 0 15px;
+}
+
+.years{
+    margin: 0 0 10px 35px;
+    font-size: 15px;
+    color: darkgrey;
+    font-family: 'Frankois_One', sans-serif;
+}
+
+.text-head-content, .text-head-content-1, .text-head-cont-3{
+    margin: 15px 0 0 0;
+    font-size: 24px;
+    font-family: 'Frankois_One', sans-serif;
+}
+
+.text-head-content-1{
+    margin: 105px 0 0 20px;
+    color: rgb(13, 146, 146);
+}
+
+.text-head-cont-3{
+    margin-left: 20px;
+    color: rgb(13, 146, 146);
+}
+
+.contents, .cont-1{
+    margin: 5px 15px 0 70px;
+    font-size: 18px;
+    font-family: 'Frankois_One', sans-serif;
+    line-height: 1.25;
+}
+
+.cont-1{
+    margin: 60px 0 0 20px;
+}
+
+.cont-2{
+    margin: 5px 0 0 0px;
+}
+
+.margins{
+    margin-bottom: 50px;
+}
+
+.union{
+    height: 1900px;
+}
+
+.marg{
+    margin-left: 20px;
+}
