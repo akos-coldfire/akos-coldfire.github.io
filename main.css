@@ -7,9 +7,52 @@
 @import url(./reset.css);
 @import url(./fonts.css);
 
+.menu{
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    display: flex;
+    text-align: center;
+    width: 1119px;
+    height: 120px;
+    padding: 10px;
+    background: #282a3c;
+    margin: auto;
+}
+
+.nav{
+    display: block;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 180px;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu nav ul li {
+    display: flex;
+    list-style-type: none;
+    margin:0 25px;
+    font-size: 25px;
+    font-family: 'Frankois_One', sans-serif;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.menu nav ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .left{
     background-color: rgb(35, 46, 58);
-    height: 1950px;
+    height: 2500px;
     width: 370px;
     padding: 60px 60px;
 }
@@ -53,7 +96,7 @@
 .right{
     width: 749px;
     background-color: white;
-    height: 1950px;
+    height: 2500px;
 }
 
 .image{
@@ -258,13 +301,13 @@ hr{
     width: 75px;
 }
 
-.fa-user, .fa-desktop, .fa-graduation-cap{
+.fa-user, .fa-desktop, .fa-graduation-cap, .fa-calendar-check{
     color: rgb(13, 146, 146);
 }
 
-.block-user, .block-user-1, .block-user-2{
+.block-user, .block-user-1, .block-user-2, .block-user-3{
     margin: 17px 10px 20px 20px;
-    width: 493px;
+    width: 491px;
     height: 3px;
     background-color: rgb(13, 146, 146);
 }
@@ -273,20 +316,24 @@ hr{
     margin: 50px 0 10px 35px ;
     font-size: 18px;
     font-family: 'Frankois_One', sans-serif;
-    line-height: 1.5;
+    line-height: 26px;
 }
 
 .full-desription{
     margin: 20px 15px 50px 0;
-    line-height: 1.25;
+    line-height: 26px;
 }
 
 .block-user-1{
-    width: 290px;
+    width: 288px;
 }
 
 .block-user-2{
     width: 410px;
+}
+
+.block-user-3{
+    width: 454px;
 }
 
 .text-companies{
@@ -298,7 +345,7 @@ hr{
 }
 
 .sizing{
-    margin: 120px 0 0 15px;
+    margin-top: 110px;
 }
 
 .years{
@@ -328,7 +375,7 @@ hr{
     margin: 5px 15px 0 70px;
     font-size: 18px;
     font-family: 'Frankois_One', sans-serif;
-    line-height: 1.25;
+    line-height:26px;
 }
 
 .cont-1{
@@ -344,9 +391,46 @@ hr{
 }
 
 .union{
-    height: 1900px;
+    margin-top: 120px;
+    height: 2500px;
 }
 
 .marg{
     margin-left: 20px;
+}
+
+.list-number {
+    margin-left: 60px;
+    margin-top: 8px;
+    font-weight: 700;
+    font-family: 'Frankois_One', sans-serif;
+}
+
+.main-link{
+    margin-top: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: 'Frankois_One', sans-serif;
+    color: black;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.main-link:hover{
+    color:rgb(13, 146, 146);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.fa-check{
+    margin-left: 7px;
+    font-size: 18px;
+    color: black;
+}
+
+#about, #projects, #experience, #education{
+    padding-top: 120px;
+    margin-top: -120px;
 }
