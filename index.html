@@ -6,12 +6,24 @@
     <title>Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="./main.css">
+    <link rel="SHORTCUT ICON" href="../image/user-circle-solid.svg" type="image/x-icon">
 </head>
 <body bgcolor="#c0c0c0">
     <div class="container">
+        <div class="menu">
+            <a class="marg" href="./index.html"><img src="../image/logotype" alt="logo"></a>
+           <nav>
+                <ul>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Work experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="union">
             <div class="left positionss">
-            <div class="imgs">
+            <div>
                 <img src="../image/Avatar.png" width="250" height="250">
                 </div> 
                 <div class="text-head">contact</div>
@@ -89,12 +101,12 @@
                     <h1>Alina Kosak</h1>
                     <p class="heads">Full-stack developer</p>
                 </div> 
-                <div class="text-head-right positionss">
+                <h4 class="text-head-right positionss">
                     <i class="far fa-user"></i>
                     profile
-                </div>
+                </h4>
                 <div class="block-user positionss"></div>
-                <div class="description">
+                <div class="description" id="about">
                     <p>Place of residence: Ivano-Frankivsk.</p>
                     <p>Date of birth: 21.04.2003.</p>
                     <p> Marital status: single.</p>
@@ -104,10 +116,24 @@
                     Interested in additional training among other fields. Personal qualities: responsibility, 
                     creativity, motivation for everything new, sociability, stress resistance, etc.</p>
                 </div>
-                <div class="text-head-right positionss">
+                <h4 class="text-head-right positionss" id="projects">
+                    <i class="far fa-calendar-check"></i>
+                    projects
+                </h4>
+                <div class="block-user-3 positionss"></div>
+                <div class="sizing">
+                    <ol>
+                        <li class="list-number"><a class="main-link" href="index.html">Laboratory work 1.The general structure of the HTML document</a><i class="fas fa-check"></i></span></li>
+                        <li class="list-number"><a class="main-link" href="../LW/LR2/index.html" target="_blank">Laboratory work 2. Using CSS properties of display, lists and HTML entities</a><i class="fas fa-check"></i></li>
+                        <li class="list-number"><a class="main-link" href="" target="_blank">Laboratory work 3</a></li>
+                        <li class="list-number"><a class="main-link" href="" target="_blank">Laboratory work 4</a></li>
+                        <li class="list-number full-desription"><a class="main-link" href="" target="_blank">Laboratory work 5</a></li>
+                    </ol>
+                </div>
+                <h4 class="text-head-right positionss" id="experience">
                     <i class="fas fa-desktop"></i>
                     work experience
-                </div>
+                </h4>
                 <div class="block-user-1 positionss"></div>
                 <div class="sizing">
                     <ul type="square">
@@ -154,10 +180,10 @@
                             </p>
                         </div>
                     </ul>
-                    <div class="text-head-right positionss">
+                    <h4 class="text-head-right positionss" id="education">
                         <i class="fas fa-graduation-cap"></i>
                         education
-                    </div>
+                    </h4>
                     <div class="block-user-2 positionss"></div>
                     <div class="cont-1">
                         <p class="text-head-content-1">College of Electronic Devices IFNTUNG</p>
