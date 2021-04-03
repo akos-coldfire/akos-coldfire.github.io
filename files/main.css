@@ -16,7 +16,7 @@
     width: 1119px;
     height: 120px;
     padding: 10px;
-    background: #282a3c;
+    background: black;
     margin: auto;
 }
 
@@ -106,7 +106,7 @@
 
 h1{
     position: absolute;
-	top: 120px;
+	top: 170px;
 	left: 100px;
 	width: 100%;
     color: white;
@@ -117,7 +117,7 @@ h1{
 
 .heads{
     position: absolute;
-	top: 190px;
+	top: 240px;
 	left: 100px;
 	width: 100%;
     color: rgb(179, 243, 222);
