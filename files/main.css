@@ -16,6 +16,7 @@
     width: 1119px;
     height: 120px;
     padding: 10px;
+    box-shadow: 0 6px 5px -5px black;
     background: black;
     margin: auto;
 }
