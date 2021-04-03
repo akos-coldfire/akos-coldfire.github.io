@@ -74,7 +74,7 @@
 }
 
 .text-head-right{
-    margin: 0 0 0 35px;
+    margin: 60px 0 0 35px;
     color: black;
 }
 
@@ -322,6 +322,10 @@ hr{
 .full-desription{
     margin: 20px 15px 50px 0;
     line-height: 26px;
+}
+
+.block-user{
+    margin: 77px 10px 20px 20px;
 }
 
 .block-user-1{
