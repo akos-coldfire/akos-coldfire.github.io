@@ -16,7 +16,7 @@
     width: 1119px;
     height: 120px;
     padding: 10px;
-    background: rgb(0,1,31);
+    background: black;
     margin: auto;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .left{
-    background-color: rgb(35, 46, 58);
+    background-color: rgb(0,1,31);
     height: 2500px;
     width: 370px;
     padding: 60px 60px;
