@@ -4,8 +4,8 @@
   padding: 0;
 }
 
-@import url(./styles/reset.css);
-@import url(./styles/fonts.css);
+@import url(../../../files/reset.css);
+@import url(../../../files/fonts.css);
 
 body{
   font-family: Verdana, Tahoma, sans-serif;
