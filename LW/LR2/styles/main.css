@@ -61,7 +61,7 @@
 
 .container{
     margin: 120px auto 0;
-    height: 1500px;
+    height: auto;
     width: 1119px;
     background-color: rgb(198, 238, 238);
 }
