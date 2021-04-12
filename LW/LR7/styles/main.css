@@ -1,0 +1,297 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+@import url(../../../files/reset.css);
+@import url(../../../files/fonts.css);
+
+body{
+    font-family: 'Frankois_One', sans-serif;
+}
+
+.menu{
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    display: flex;
+    text-align: center;
+    width: 1119px;
+    height: 120px;
+    padding: 10px;
+    box-shadow: 0 6px 5px -5px black;
+    background-color: black;
+    margin: auto;
+}
+
+.nav{
+    display: block;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 180px;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu nav ul li {
+    display: flex;
+    list-style-type: none;
+    margin:0 25px;
+    font-size: 22px;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.menu nav ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.marg{
+    margin-left: 20px;
+}
+
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+    margin: 120px auto 0;
+    height: auto;
+    width: 1119px;
+    background-color: white;
+}
+
+.size-block{
+    padding: 50px 90px 30px;
+}
+
+.LW{
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+}
+
+h2{
+    margin: 30px 0 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.borders, .block{
+    position: relative;
+    height: 450px;
+}
+
+.borders{
+    margin: 0 auto;
+    width: 970px;
+    border: 1px solid lightgrey;
+}
+
+.block{
+    float: left;
+    width: 25%;
+    padding: 0 20px;
+    border-right: 1px solid lightgrey;
+}
+
+.sticker{
+    position: absolute;
+    right: 10px;
+    top: -7%;
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 70px;
+    height: 70px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.sticker-new{
+    background-color: rgb(134,176,34);
+    line-height: 60px;
+}
+
+.sticker-hit{
+    background-color: rgb(0,157,225);
+    padding-top: 15px;
+}
+
+.category, .name-product, .selling{
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.category{
+    padding: 40px 0;
+    height: 98px;
+    border-bottom: 1px solid lightgrey;
+    text-transform: uppercase;
+    color: grey;
+    transition-duration: 0.9s;
+    transition-property: transform;
+}
+
+.category:hover{
+    color: black;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+.image-category{
+    display: block;
+    margin: 25px auto;
+    transition-duration: 0.9s;
+    transition-property: transform;
+}
+
+.image-category:hover{
+    transform: rotate(0.4turn);
+    cursor: pointer;
+}
+
+.name-product{
+    margin-top: 35px;
+    color: rgb(27,159,225);
+    font-weight: bold;
+}
+
+.name-product:hover{
+    color: slateblue;
+}
+
+.selling{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 40px;
+    margin-bottom: 5px;
+    padding: 4px;
+    width: 140px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+.no-click{
+    font-size: 14px;
+    background-color: rgb(204,51,153);
+    color: white;
+    pointer-events: none;
+    cursor: default;
+}
+
+.yes-click{
+    padding-top: 12px;
+    color: black;
+    background-color: rgb(240,229,36);
+    transition-duration: 0.9s;
+}
+
+.yes-click:hover{
+    color: white;
+    background-color: rgb(58, 58, 52);
+    cursor: pointer;
+}
+
+.price, .price-2{
+    position: relative;
+    top: 10px;
+    width: auto;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.price{
+    left: 60%;
+}
+
+.price-2{
+    left: 80%;
+}
+
+.old-price{
+    padding-right: 5px;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.current-price{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.arrow{
+    position: absolute;
+    top: 81px;
+    padding-top: 8px;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    color: lightgrey;
+}
+
+.arrow:hover{
+    background-color: lightgrey;
+    color: white;
+}
+
+.arrow-left{
+    left: -18px;
+}
+
+.arrow-right{
+    right: -18px;
+}
+
+.bottom{
+    width: 1119px;
+    height: 70px;
+    background-color: black;
+}
+
+.positionss{
+    float: left;
+}
+
+.icons{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.icons li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.fa-facebook, .fa-instagram, .fa-youtube{
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-youtube:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
