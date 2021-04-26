@@ -1,0 +1,422 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+@import url(../../../files/reset.css);
+@import url(../../../files/fonts.css);
+
+body{
+    font-family: 'Frankois_One', sans-serif;
+}
+
+.menu{
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    display: flex;
+    text-align: center;
+    width: 1119px;
+    height: 120px;
+    padding: 10px;
+    box-shadow: 0 6px 5px -5px black;
+    background-color: black;
+    margin: auto;
+}
+
+.nav{
+    display: block;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 180px;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu nav ul li {
+    display: flex;
+    list-style-type: none;
+    margin:0 25px;
+    font-size: 22px;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.menu nav ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.marg{
+    margin-left: 20px;
+}
+
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+    margin: 120px auto 0;
+    height: auto;
+    width: 1119px;
+    background-color:  white;
+}
+
+.size-block{
+    padding: 50px 90px 30px;
+}
+
+.LW{
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+}
+
+h2{
+    margin: 20px 0;
+}
+
+.main-block{
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.house{
+    position: absolute;
+    bottom: 0px;
+    left: 75px;
+    width: 150px;
+    height: 150px;
+    background: coral;
+}
+
+.roof{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+.chimney{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    width: 20px;
+    height: 60px;
+    background: black;
+}
+
+.door{
+    position: absolute;
+    bottom: 0px;
+    left: 90px;
+    z-index: 1;
+    width: 60px;
+    height: 90px;
+    background: brown;
+}
+  
+.window{
+    position: absolute;
+    bottom: 80px;
+    right: 90px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: cyan;
+}
+
+.main-task2{
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(129,204,199);
+}
+
+.main-task2>img{
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+.water{
+    bottom: 0;
+}
+
+.world{
+    bottom: 20px;
+}
+
+.wooden-ship{
+    right: 170px;
+    bottom: 30px;
+    width: 20%;
+    height: 30%;
+}
+
+.clouds{
+    width: 50%;
+    height: 30%;
+    left: 70px;
+}
+
+.fullwrap{
+    position: relative;
+    width: 600px;
+    height: 700px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.borders{
+    border: 1px solid black;
+}
+
+.header{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.wrap{
+    height: 400px;
+    padding: 10px;
+}
+
+.wrap>.main{
+    height: 100%;
+    width: 315px;
+    margin-right: 20px;
+    float: left;
+}
+
+.wrap>.sidebar{
+    float: left;
+    height: 100%;
+    width: 220px;
+}
+
+.footer{
+    height: 155px;
+    margin-top: 10px;
+}
+
+.calculation{
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+form[name="calculation_float"], form[name="calculation_position"]{
+    width: 360px;
+    height: 560px;
+    border: 3px solid rgb(95,157,159);
+    border-radius: 10px;
+}
+
+form[name="calculation_float"]{
+    float: left;
+}
+
+form[name="calculation_position"]{
+    margin-left: 500px;
+}
+
+.head-calc{
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(95,157,159);
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.content-calc-float{
+    padding: 10px;
+}
+
+input[name="inputs"]{
+    display: block;
+    margin: 10px auto;
+    width: 335px;
+    height: 40px;
+    border: 3px solid rgb(95,157,159);
+    border-radius: 5px;
+    text-align: right;
+    font-size: 25px;
+    color: rgb(95,157,159);
+    outline: none;
+}
+
+input[type="reset"], input[type="button"]{
+    font-weight:bold;
+    outline: none;
+    transition: 0.5s;
+}
+
+input[type="reset"]{
+    margin-bottom: 15px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(95,157,159);
+    color: white;
+    float: right;
+    border-style: none;
+    font-size: 25px;
+}
+
+input[type="button"]{
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    border: 3px solid rgb(95,157,159);
+    font-size: 20px;
+    text-align: center;
+    color:rgb(95,157,159);
+}
+
+.content-calc-position{
+    position: relative;
+    padding: 10px;
+}
+
+.content-calc-position>input[type="button"]{
+    position: absolute;
+}
+  
+.line-4-calc, .line-3-calc{
+    float: right;
+}
+  
+.line-3-calc{
+    margin-left: 10px;
+}
+  
+.line-2-calc, .line-4-calc{
+    margin-bottom: 10px;
+}
+  
+.line-1-calc, .line-2-calc{
+    float: left;
+    margin-right: 10px;
+}
+  
+.column-calc{
+    margin-bottom: 15px;
+}
+
+input[type="button"]:hover, input[type="reset"]:hover{
+    color:white;
+    background: rgb(95,157,159);
+    cursor: pointer;
+}
+
+input[type="reset"]:hover{
+    border: 3px solid rgb(95,157,159);
+}
+  
+input[type="button"]:active, input[type="reset"]:active{
+    opacity: 0.5;
+}
+
+.line-position-1{
+    top: 125px;
+}
+  
+.line-position-2{
+    top: 210px;
+}
+  
+.line-position-3{
+    bottom:110px;
+}
+  
+.line-position-4{
+    bottom: 20px;
+}
+  
+.button-calc3{
+    right: 10px;
+}
+  
+.button-calc4{
+    right: 95px;
+}
+  
+.button-calc2{
+    left: 95px;
+}
+
+.scrollup {
+    position: fixed;
+    color: #fff; 
+    background-color: rgb(104, 94, 94); 
+    right: 30px; 
+    bottom: 20px; 
+    padding: 4px 10px;
+    font-size: 22px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    display: none;
+    text-align: center; 
+}
+
+div.scrollup:hover {
+    background-color: #000; 
+}
+
+.bottom{
+    width: 1119px;
+    height: 70px;
+    background-color: black;
+}
+
+.icons{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin: 25px 7px 0;
+    float: left;
+    background-image: url('../../../image/social-icons-sprite2.png');
+    background-color: black;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.facebook{
+    margin-left: 530px;
+    background-position: 171px -18px;
+} 
+
+.instagram{
+    background-position: 135px 54px;
+}
+
+.youtube{
+    background-position: 207px 54px;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

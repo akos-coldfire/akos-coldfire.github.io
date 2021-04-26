@@ -1,0 +1,214 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url(../../../files/reset.css);
+@import url(../../../files/fonts.css);
+
+body{
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.menu{
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  display: flex;
+  text-align: center;
+  width: 1119px;
+  height: 120px;
+  padding: 10px;
+  box-shadow: 0 6px 5px -5px black;
+  background-color: black;
+  margin: auto;
+}
+
+.nav{
+  display: block;
+}
+
+.menu nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 0 180px;
+}
+
+.menu nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu nav ul li {
+  display: flex;
+  list-style-type: none;
+  margin:0 25px;
+  font-size: 22px;
+  font-family: 'Frankois_One', sans-serif;
+  transition-duration: 0.7s;
+  transition-property: transform;
+}
+
+.menu nav ul li:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.marg{
+  margin-left: 20px;
+}
+
+.container::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container{
+  margin: 120px auto 0;
+  height: auto;
+  width: 1119px;
+  background-color:  rgb(216,238,237);
+}
+
+.size-block{
+  padding: 50px 90px 0;
+}
+
+.LW{
+  height: 50px;
+  text-align: center;
+  font-size: 35px;
+  font-style: oblique;
+  font-family: 'Frankois_One', sans-serif;
+}
+
+article, main {
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 17px;
+  border: 1px solid rgb(97, 93, 93);
+}
+
+h2, header h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+header h2{
+  font-size: 30px;
+  color: green;
+}
+
+article p{
+  margin: 10px 0;
+}
+
+article header p {
+  color: white;
+  background-color: red;
+}
+
+article figure{
+  margin-left: 50px;
+  padding: 5px;
+  width: 600px;
+  border: 2px solid black;
+} 
+
+div.size-block img {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.head-title {
+  font-size: 30px;
+}
+
+main p{
+  margin-bottom: 15px;
+}
+
+div.size-block nav ul {
+  background-color: PaleVioletRed;
+  list-style: none;
+  width: 200px;
+  border: 1px solid MediumVioletRed;
+  margin: 50px 0;
+}
+
+div.size-block nav ul li {
+  border-bottom: 1px solid MediumVioletRed;
+  padding: 5px;
+}
+
+div.size-block nav ul li:last-child {
+  border-bottom: none;
+}
+
+div.size-block nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+div.size-block nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.scrollup {
+  position: fixed;
+  color: #fff; 
+  background-color: rgb(104, 94, 94); 
+  right: 30px; 
+  bottom: 20px; 
+  padding: 4px 10px;
+  font-size: 22px; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  display: none;
+  text-align: center; 
+}
+
+div.scrollup:hover {
+  background-color: #000; 
+}
+
+.bottom{
+  width: 1119px;
+  height: 70px;
+  background-color: black;
+}
+
+.icons{
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin: 25px 7px 0;
+  float: left;
+  background-image: url('../../../image/social-icons-sprite2.png');
+  background-color: black;
+  transition-duration: 0.7s;
+  transition-property: transform;
+}
+
+.facebook{
+  margin-left: 530px;
+  background-position: 171px -18px;
+} 
+
+.instagram{
+  background-position: 135px 54px;
+}
+
+.youtube{
+  background-position: 207px 54px;
+}
+
+.icons:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
