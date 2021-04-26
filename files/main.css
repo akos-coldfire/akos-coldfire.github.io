@@ -17,7 +17,7 @@
     height: 120px;
     padding: 10px;
     box-shadow: 0 6px 5px -5px black;
-    background: black;
+    background-color: black;
     margin: auto;
 }
 
@@ -40,7 +40,7 @@
     display: flex;
     list-style-type: none;
     margin:0 25px;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Frankois_One', sans-serif;
     transition-duration: 0.7s;
     transition-property: transform;
@@ -52,7 +52,7 @@
 }
 
 .left{
-    background-color: rgb(0,1,31);
+    background-color:  rgb(0,1,31);
     height: 2500px;
     width: 370px;
     padding: 60px 60px;
@@ -121,7 +121,8 @@ h1{
 	top: 240px;
 	left: 100px;
 	width: 100%;
-    color: rgb(179, 243, 222);
+    /* color: rgb(179, 243, 222); */
+    color: white;
     font-size: 30px;
     text-transform: uppercase;
     font-family: 'CreateRound', sans-serif;
@@ -151,6 +152,24 @@ h1{
     text-decoration: none;
 }
 
+.scrollup {
+    position: fixed;
+    color: #fff; 
+    background-color: rgb(104, 94, 94); 
+    right: 30px; 
+    bottom: 20px; 
+    padding: 4px 10px;
+    font-size: 22px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    display: none;
+    text-align: center; 
+}
+
+div.scrollup:hover {
+    background-color: #000; 
+}
+
 .bottom{
     width: 1119px;
     height: 70px;
@@ -158,26 +177,33 @@ h1{
 }
 
 .icons{
-    text-align: center;
-    margin: 20px auto;
-}
-
-.fa-facebook, .fa-instagram, .fa-youtube{
-    margin-right: 10px;
-    font-size: 30px;
-    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin: 25px 7px 0;
+    float: left;
+    background-image: url('../image/social-icons-sprite2.png');
+    background-color: black;
     transition-duration: 0.7s;
     transition-property: transform;
 }
 
-.fa-facebook:hover, .fa-instagram:hover, .fa-youtube:hover{
-    transform: scale(1.2);
-    cursor: pointer;
+.facebook{
+    margin-left: 530px;
+    background-position: 171px -18px;
+} 
+
+.instagram{
+    background-position: 135px 54px;
 }
 
-.icons li{
-    display: inline-block;
-    list-style-type: none;
+.youtube{
+    background-position: 207px 54px;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 hr{
@@ -425,6 +451,7 @@ hr{
 
 .main-link:hover{
     color:rgb(13, 146, 146);
+    font-weight: bold;
     transform: scale(1.1);
     cursor: pointer;
 }
