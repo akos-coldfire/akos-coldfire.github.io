@@ -53,7 +53,7 @@
 
 .left{
     background-color:  rgb(0,1,31);
-    height: 2500px;
+    height: 2600px;
     width: 370px;
     padding: 60px 60px;
 }
@@ -97,7 +97,7 @@
 .right{
     width: 749px;
     background-color: white;
-    height: 2500px;
+    height: 2600px;
 }
 
 .image{
@@ -171,6 +171,7 @@ div.scrollup:hover {
 }
 
 .bottom{
+    margin-top: 100px;
     width: 1119px;
     height: 70px;
     background-color: black;
